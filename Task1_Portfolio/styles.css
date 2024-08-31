@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family :sans-serif, arial;
+}
+html, body {
+    background:#070707;
+    color: #fff;
+}
+.container {
+	width: 1100px;
+	margin: 0px auto;
+	display: table;
+}
+.width-33 {
+	width: 33%;
+	float: left;
+}
+.width-66 {
+	width: 66%;
+	float: left;
+}
+.main-panel {
+	width: 100%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	height: 100vh;
+}
+
+.logo {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.span-col {
+	color: #10eeee;
+}
+
+.span-cols {
+	color: #10eeee;
+}
+.span-cols:hover{
+    color:white;
+}
+
+nav {
+	float: right;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 20px;
+	color:white;
+}
+
+.width-50 {
+	float: left;
+	width: 50%;
+}
+.banner-section {
+	width: 100%;
+	float: left;
+	margin-top: 25vh;
+}
+.banner-section h1 {
+	font-size: 48px;
+	margin-top: 10px;
+	font-weight: bolder;
+}
+.banner-section h2 {
+	font-size: 20px;
+	line-height: 25px;
+	margin-top: 10px;
+	font-weight: 400;
+}
+.banner-section a {
+	float: left;
+	text-decoration: none;
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 50%;
+	text-align: center;
+	border: 2px solid #35f8ff;
+	color:#35f8ff;
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+.banner-section a:hover{
+    background-color: #10eeee;
+    color:#fff;
+}
+
+.main-panel img {
+	margin-top: 10%;
+	width: 100%;
+	margin-left: 10%;
+}
+#intro{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding:15px;
+    padding:0 20px;
+    color:#fff;
+    text-shadow: 2px 2px 4px #fff;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.heading{
+    font-family:century;
+    font-size:3rem;
+    text-align:center;
+    margin:40px 0px;
+    color: #10eeee;
+}
+
+
+#pic{
+    display: flex;
+}
+#pic img{
+    border-radius: 50%;
+    border-style:double;
+    border-color:#10eeee;
+    border-width:1vb;
+    width: 600px;
+    height:300px;   
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.skills{
+    padding:0 20px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 5px #10eeee;
+    box-sizing: border-box;
+    height: 500px;
+    width: 600px;
+
+}
+.skill-name{
+    font-size:20px;
+    font-weight :700;
+    color:rgb(245, 245, 245);
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+.skill-per{
+    height:14px;
+    background-color: #10eeee;
+    border-radius:3px;
+    position:relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position:absolute;
+    padding: 4px 6px;
+    background-color: rgb(99, 96, 96);
+    border-radius: 4px;
+    font-size:12px;
+    top:-35px;
+    right:0;
+    transform:translateX(50%)
+}
+  
+@keyframes fillBars{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+.headings{
+    font-family:century;
+    font-size:2rem;
+    text-align:center;
+    margin:40px 0px;
+    color: black;
+ }
+ #project{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+ }
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    box-sizing: borer-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    height:500px;
+    border:1px solid black;
+    margin:10px;
+    align-items: center;
+    text-align:justify;
+    padding:10px;
+    border-radius: 15px;
+    background: linear-gradient(to top , #10eeee  50% ,#10eeee 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+ .box:hover{
+    background-position: left bottom;
+    color:rgb(46, 44, 44);
+    border:none;
+    box-shadow: 0 0 20px #08d8d8;
+}
+
+.box img{
+    width:300px;
+    height:250px;
+    background-color: white;
+    padding:10px;
+}
+.box p{
+    font-style: italic;
+    font-size: 15px;
+}
+footer {
+    background-color:#10eeee ;
+    color: #1b1b1b;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #070707;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+header, section, footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
